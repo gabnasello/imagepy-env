@@ -1,8 +1,8 @@
-# Create a Docker Image with a conda environment for image processing
+# Create a Docker Image with a conda environment and Fiji (ImageJ) for image processing
 
 ## How it works
 
-The ```Dockerfile``` creates a Docker Image on Ubuntu and installs miniconda. After, it creates a virtual environment called imagepy-env from the ```environment.ylm``` file.
+The ```Dockerfile``` creates a Docker Image on Ubuntu and installs miniconda. After, it creates a virtual environment called imagepy-env from the ```environment.ylm``` file. Finally, it downloads 
 
 The full list of the Python  packages installed is saved within the docker image in ```spec-conda-file.txt```  and```package_versions_py.txt```
 
