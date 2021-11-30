@@ -1,0 +1,15 @@
+-------------------------------
+v. 20211130
+
+List of Python packages:
+
+ - jupyterlab
+ - jupyter_contrib_nbextensions
+ - napari
+ - pandas
+ - numpy
+ - pillow
+ - scikit-image
+ - python-bioformats
+ - pip
+ - lckr-jupyterlab-variableinspector

@@ -1,0 +1,16 @@
+name: imagepy-env
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+ - jupyterlab
+ - jupyter_contrib_nbextensions
+ - napari
+ - pandas
+ - numpy
+ - pillow
+ - scikit-image
+ - python-bioformats
+ - pip
+ - pip:
+    - lckr-jupyterlab-variableinspector
