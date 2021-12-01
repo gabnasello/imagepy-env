@@ -1,5 +1,5 @@
 sudo docker build --no-cache -t gnasello/imagepy-env:latest .
-sudo docker build -t gnasello/imagepy-env:20211130 .
+sudo docker build -t gnasello/imagepy-env:latest .
 sudo docker images
 sudo docker rmi imageID -f
 
@@ -9,7 +9,3 @@ xhost +local:root
 sudo docker run -it --rm -p 7777:7777 --device=/dev/dri:/dev/dri -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --volume $HOME:/root/host_home --workdir /root/host_home gnasello/imagepy-env:latest
 
 xhost -local:root
-
-
-# '"device=0"' refers to the specific GPU(s) to run DeepCell-tf on, and is not required
-sudo docker run --gpus '"device=0"' -it --rm -p 7777:7777 --device=/dev/dri:/dev/dri -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --volume $HOME:/root/host_home --workdir /root/host_home gnasello/imagepy-env:20211130
