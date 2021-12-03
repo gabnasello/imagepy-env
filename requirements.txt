@@ -1,0 +1,7 @@
+jupyterlab
+jupyter_contrib_nbextensions
+lckr-jupyterlab-variableinspector
+vispy==0.6.6
+napari[all]
+pillow
+python-bioformats

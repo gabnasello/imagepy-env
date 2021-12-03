@@ -8,4 +8,6 @@ xhost +local:root
 
 sudo docker run -it --rm -p 7777:7777 --device=/dev/dri:/dev/dri -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --volume $HOME:/root/host_home --workdir /root/host_home gnasello/imagepy-env:latest
 
+sudo docker run -it --rm -p 7777:7777 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --volume $HOME:/root/host_home --workdir /root/host_home gnasello/imagepy-env:latest
+
 xhost -local:root

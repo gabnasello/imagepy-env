@@ -1,10 +1,10 @@
-# Create a Docker Image with a conda environment and Fiji (ImageJ) for image processing
+# Create a Docker Image with python environment for image processing and Fiji (ImageJ) 
 
 ## How it works
 
-The ```Dockerfile``` creates a Docker Image on Ubuntu and installs miniconda. After, it creates a virtual environment called imagepy-env from the ```environment.ylm``` file. Finally, it downloads 
+The ```Dockerfile``` creates a Docker Image from [Tensorflow](https://hub.docker.com/layers/tensorflow/tensorflow/2.5.1-gpu/images/sha256-ccf22168cc21cd4977065fccd9f58d3f305a103227bb97347242fc0dca87dc95?context=explore). After, it downloads Python packages for image processing (through ```requirements.txt.txt```) and installs Fiji. 
 
-The full list of the Python  packages installed is saved within the docker image in ```spec-conda-file.txt```  and```package_versions_py.txt```
+The full list of the Python  packages installed is saved within the docker image in ```package_versions_py.txt```
 
 ## Create a new image
 
