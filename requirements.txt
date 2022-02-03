@@ -5,3 +5,7 @@ vispy==0.6.6
 napari[all]
 pillow
 python-bioformats
+aicsimageio==3.0.7
+matplotlib-scalebar
+svgwrite
+seaborn

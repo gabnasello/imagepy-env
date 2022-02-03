@@ -1,4 +1,14 @@
 -------------------------------
+v. 20200203
+
+List of Python packages:
+
+- aicsimageio==3.0.7
+- matplotlib-scalebar
+- svgwrite
+- seaborn
+
+-------------------------------
 v. 20211130.1
 
 List of Fiji (ImageJ) plugis:
