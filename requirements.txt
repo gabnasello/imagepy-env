@@ -9,3 +9,7 @@ aicsimageio==3.0.7
 matplotlib-scalebar
 svgwrite
 seaborn
+pyvista
+svglib
+reportlab
+openpyxl

@@ -23,21 +23,7 @@ RUN sed -i "/tensorflow>/d" /deepcell-tf/requirements.txt && \
 # Install deepcell via setup.py
 RUN pip install deepcell
 
-# Dockerfile adapted from Napari [https://github.com/napari/napari/blob/main/dockerfile]
-# install miniconda from https://github.com/ContinuumIO/docker-images/tree/master/miniconda3/debian/Dockerfile
-# install miniconda in ubuntu Docker from https://gist.github.com/pangyuteng/f5b00fe63ac31a27be00c56996197597
-# install R packages from https://github.com/theislab/single-cell-tutorial/blob/master/Dockerfile
-# install environment.yml from Gabriele Nasello
-# Activate conda environment in Dockerfile https://pythonspeed.com/articles/activate-conda-dockerfile/
-
-# ARG UBUNTU_VER=latest
-
-# FROM ubuntu:${UBUNTU_VER}
-
-# # below env var required to install libglib2.0-0 non-interactively
-# # Avoiding user interaction with tzdata when installing ubuntu
-# ENV TZ America/Los_Angeles
-# ENV DEBIAN_FRONTEND noninteractive
+# packages added by Gabriele Nasello
 
 # System packages 
 RUN apt-get update && apt-get install -yq curl wget jq vim git unzip htop less nano emacs
